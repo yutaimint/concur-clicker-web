@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concur Clicker - Automate Your Expenses</title>
+    <meta name="description" content="Automate SAP Concur expense reporting with Concur Clicker. Save time by auto-filling dates and routes.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(135deg, #0078d4 0%, #005a9e 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-arrow-pointer text-blue-600 text-xl"></i>
+                    <span class="font-bold text-xl tracking-tight text-slate-900">Concur Clicker</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-slate-600 hover:text-blue-600 transition">Features</a>
+                    <a href="#pricing" class="text-slate-600 hover:text-blue-600 transition">Pricing</a>
+                    <a href="#faq" class="text-slate-600 hover:text-blue-600 transition">FAQ</a>
+                    <a href="#contact" class="text-slate-600 hover:text-blue-600 transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg text-white pt-20 pb-24">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                Stop Manually Clicking Dates in Concur.
+            </h1>
+            <p class="text-lg md:text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
+                The Chrome Extension that automates your transportation expense reporting. 
+                Select a date range, choose your route, and let the bot do the rest.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-50 transition transform hover:-translate-y-1">
+                    <i class="fa-brands fa-chrome mr-2"></i> Add to Chrome
+                </a>
+                <a href="#features" class="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white/10 transition">
+                    Learn More
+                </a>
+            </div>
+            <p class="mt-6 text-sm text-blue-200">
+                <i class="fa-solid fa-check mr-1"></i> Secure Local Processing
+                <span class="mx-2">•</span>
+                <i class="fa-solid fa-check mr-1"></i> No Credit Card Required for Trial
+            </p>
+        </div>
+    </header>
+
+    <!-- Features -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Why Use Concur Clicker?</h2>
+                <p class="text-slate-500 mt-2">Designed for Japanese business professionals who value their time.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="p-6 bg-slate-50 rounded-xl border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Bulk Date Entry</h3>
+                    <p class="text-slate-600">
+                        Select a start and end date, and the extension loops through every day automatically. No more opening the same modal 20 times.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="p-6 bg-slate-50 rounded-xl border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-business-time"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Smart Scheduling</h3>
+                    <p class="text-slate-600">
+                        Customize your run days. Skip weekends or choose specific days (e.g., Mon, Wed, Fri) to match your actual commute.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="p-6 bg-slate-50 rounded-xl border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">100% Private</h3>
+                    <p class="text-slate-600">
+                        All automation happens locally in your browser. We never collect, store, or transmit your expense data to any server.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing (Required by Stripe) -->
+    <section id="pricing" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">Simple, Transparent Pricing</h2>
+            <p class="text-slate-500 mb-12">Choose the plan that fits your needs.</p>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+                <!-- Free Plan -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                    <h3 class="text-lg font-semibold text-slate-500 uppercase tracking-wide">Free Trial</h3>
+                    <div class="my-4">
+                        <span class="text-4xl font-bold text-slate-900">$0</span>
+                    </div>
+                    <ul class="text-left space-y-3 mb-8 text-slate-600">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Manual run mode</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Single day entry</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Basic support</li>
+                    </ul>
+                    <a href="#" class="block w-full py-3 px-4 bg-slate-100 text-slate-700 font-bold rounded-lg hover:bg-slate-200 transition">Install Free</a>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-2 border-blue-600 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">POPULAR</div>
+                    <h3 class="text-lg font-semibold text-blue-600 uppercase tracking-wide">Premium</h3>
+                    <div class="my-4">
+                        <span class="text-4xl font-bold text-slate-900">$5</span>
+                        <span class="text-slate-500">/ month</span>
+                    </div>
+                    <ul class="text-left space-y-3 mb-8 text-slate-600">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> <strong>Bulk Date Automation</strong></li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> <strong>Skip Weekends</strong></li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Day-of-week selector</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Priority Support</li>
+                    </ul>
+                    <a href="#" class="block w-full py-3 px-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Policies (CRITICAL FOR STRIPE) -->
+    <section class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-slate-900 mb-8 text-center">Policies & Terms</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 text-sm text-slate-600">
+                <div>
+                    <h3 class="font-bold text-slate-900 mb-2">Refund & Cancellation Policy</h3>
+                    <p class="mb-4">
+                        You may cancel your subscription at any time via the extension settings or by contacting support. 
+                        If you cancel, your subscription will remain active until the end of the current billing period.
+                    </p>
+                    <p>
+                        We offer a <strong>7-day money-back guarantee</strong>. If you are not satisfied with the Premium features within the first 7 days of your purchase, please contact us for a full refund.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-slate-900 mb-2">Privacy Policy Summary</h3>
+                    <p class="mb-4">
+                        Concur Clicker operates entirely locally within your browser. 
+                        We do not transmit your expense data, login credentials, or browsing history to any external server.
+                    </p>
+                    <p>
+                        We only store your automation preferences (e.g., date ranges) locally on your device using Chrome's storage API.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="bg-slate-900 text-slate-400 py-12">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <div class="flex items-center gap-2 justify-center md:justify-start mb-2">
+                    <i class="fa-solid fa-arrow-pointer text-blue-500"></i>
+                    <span class="font-bold text-slate-100">Concur Clicker</span>
+                </div>
+                <p class="text-sm">Automating expenses, one click at a time.</p>
+            </div>
+            
+            <div class="text-center md:text-right">
+                <h4 class="font-bold text-slate-200 mb-2">Contact Us</h4>
+                <p class="mb-2"><i class="fa-solid fa-envelope mr-2"></i> <a href="mailto:yutaileox@gmail.com" class="hover:text-white transition">yutaileox@gmail.com</a></p>
+                <p class="text-xs mt-4">
+                    &copy; 2025 Concur Clicker. All rights reserved.<br>
+                    <a href="#" class="hover:text-white">Terms of Service</a> • <a href="#" class="hover:text-white">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
