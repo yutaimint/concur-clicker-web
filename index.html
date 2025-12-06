@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Concur Clicker - Automate Your Expenses</title>
-    <meta name="description" content="Automate SAP Concur expense reporting with Concur Clicker. Save time by auto-filling dates and routes.">
+    <title>Concur Clicker - 経費精算を自動化</title>
+    <meta name="description" content="SAP Concurの交通費精算を自動化するChrome拡張機能。日付と経路を自動入力し、毎月の作業時間を大幅に短縮します。">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+        body { font-family: 'Noto Sans JP', sans-serif; }
         .hero-bg {
             background: linear-gradient(135deg, #0078d4 0%, #005a9e 100%);
         }
@@ -26,10 +26,10 @@
                     <span class="font-bold text-xl tracking-tight text-slate-900">Concur Clicker</span>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#features" class="text-slate-600 hover:text-blue-600 transition">Features</a>
-                    <a href="#pricing" class="text-slate-600 hover:text-blue-600 transition">Pricing</a>
-                    <a href="#faq" class="text-slate-600 hover:text-blue-600 transition">FAQ</a>
-                    <a href="#tokusho" class="text-slate-600 hover:text-blue-600 transition">Legal</a>
+                    <a href="#features" class="text-slate-600 hover:text-blue-600 transition">機能</a>
+                    <a href="#pricing" class="text-slate-600 hover:text-blue-600 transition">料金</a>
+                    <a href="#policies" class="text-slate-600 hover:text-blue-600 transition">ポリシー</a>
+                    <a href="#tokusho" class="text-slate-600 hover:text-blue-600 transition">特商法表記</a>
                 </div>
             </div>
         </div>
@@ -38,25 +38,25 @@
     <!-- Hero Section -->
     <header class="hero-bg text-white pt-20 pb-24">
         <div class="max-w-4xl mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">
-                Stop Manually Clicking Dates in Concur.
+            <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+                Concurでの<br class="md:hidden">日付クリック作業をゼロに。
             </h1>
             <p class="text-lg md:text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
-                The Chrome Extension that automates your transportation expense reporting. 
-                Select a date range, choose your route, and let the bot do the rest.
+                SAP Concurでの交通費精算を自動化するChrome拡張機能。<br>
+                期間と経路を選ぶだけで、面倒な繰り返し入力をBotが代行します。
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="https://chromewebstore.google.com/detail/concur-clicker-cdp-editio/cfefigifpjeanpkchmnjbhafebnffkpn" target="_blank" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-50 transition transform hover:-translate-y-1">
-                    <i class="fa-brands fa-chrome mr-2"></i> Add to Chrome
+                    <i class="fa-brands fa-chrome mr-2"></i> Chromeに追加
                 </a>
                 <a href="#features" class="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white/10 transition">
-                    Learn More
+                    詳細を見る
                 </a>
             </div>
             <p class="mt-6 text-sm text-blue-200">
-                <i class="fa-solid fa-check mr-1"></i> Secure Local Processing
+                <i class="fa-solid fa-check mr-1"></i> 安全なローカル処理
                 <span class="mx-2">•</span>
-                <i class="fa-solid fa-check mr-1"></i> No Credit Card Required for Trial
+                <i class="fa-solid fa-check mr-1"></i> クレカ不要で試用可能
             </p>
         </div>
     </header>
@@ -65,8 +65,8 @@
     <section id="features" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-slate-900">Why Use Concur Clicker?</h2>
-                <p class="text-slate-500 mt-2">Designed for Japanese business professionals who value their time.</p>
+                <h2 class="text-3xl font-bold text-slate-900">Concur Clickerが選ばれる理由</h2>
+                <p class="text-slate-500 mt-2">日本のビジネスパーソンの時間を大切にするために設計されました。</p>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
@@ -75,9 +75,9 @@
                     <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-4 text-xl">
                         <i class="fa-solid fa-calendar-days"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Bulk Date Entry</h3>
+                    <h3 class="text-xl font-bold mb-2">日付の一括自動入力</h3>
                     <p class="text-slate-600">
-                        Select a start and end date, and the extension loops through every day automatically. No more opening the same modal 20 times.
+                        開始日と終了日を選択するだけで、その期間のすべての日付に対して自動でループ処理を行います。同じ画面を20回開く必要はもうありません。
                     </p>
                 </div>
 
@@ -86,9 +86,9 @@
                     <div class="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mb-4 text-xl">
                         <i class="fa-solid fa-business-time"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Smart Scheduling</h3>
+                    <h3 class="text-xl font-bold mb-2">スマートな曜日設定</h3>
                     <p class="text-slate-600">
-                        Customize your run days. Skip weekends or choose specific days (e.g., Mon, Wed, Fri) to match your actual commute.
+                        実行する曜日をカスタマイズできます。土日をスキップしたり、特定の曜日（例：月・水・金）だけを選んで、実際の出勤日に合わせた登録が可能です。
                     </p>
                 </div>
 
@@ -97,9 +97,9 @@
                     <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mb-4 text-xl">
                         <i class="fa-solid fa-lock"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">100% Private</h3>
+                    <h3 class="text-xl font-bold mb-2">完全なプライバシー保護</h3>
                     <p class="text-slate-600">
-                        All automation happens locally in your browser. We never collect, store, or transmit your expense data to any server.
+                        自動化はすべてお使いのブラウザ内で完結します。経費データやログイン情報が外部サーバーに送信・保存されることは一切ありません。
                     </p>
                 </div>
             </div>
@@ -109,68 +109,68 @@
     <!-- Pricing (Required by Stripe) -->
     <section id="pricing" class="py-20 bg-slate-50 border-t border-slate-200">
         <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold text-slate-900 mb-4">Simple, Transparent Pricing</h2>
-            <p class="text-slate-500 mb-12">Choose the plan that fits your needs.</p>
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">シンプルで透明性の高い料金プラン</h2>
+            <p class="text-slate-500 mb-12">ニーズに合わせてお選びください。</p>
             
             <div class="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
                 <!-- Free Plan -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
-                    <h3 class="text-lg font-semibold text-slate-500 uppercase tracking-wide">Free Trial</h3>
+                    <h3 class="text-lg font-semibold text-slate-500 uppercase tracking-wide">無料トライアル</h3>
                     <div class="my-4">
                         <span class="text-4xl font-bold text-slate-900">$0</span>
                     </div>
                     <ul class="text-left space-y-3 mb-8 text-slate-600">
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Manual run mode</li>
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Single day entry</li>
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Basic support</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> 手動実行モード</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> 1日ごとの単発入力</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> 基本サポート</li>
                     </ul>
-                    <a href="https://chromewebstore.google.com/detail/concur-clicker-cdp-editio/cfefigifpjeanpkchmnjbhafebnffkpn" target="_blank" class="block w-full py-3 px-4 bg-slate-100 text-slate-700 font-bold rounded-lg hover:bg-slate-200 transition">Install Free</a>
+                    <a href="https://chromewebstore.google.com/detail/concur-clicker-cdp-editio/cfefigifpjeanpkchmnjbhafebnffkpn" target="_blank" class="block w-full py-3 px-4 bg-slate-100 text-slate-700 font-bold rounded-lg hover:bg-slate-200 transition">無料でインストール</a>
                 </div>
 
                 <!-- Pro Plan -->
                 <div class="bg-white p-8 rounded-2xl shadow-lg border-2 border-blue-600 relative overflow-hidden">
-                    <div class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">POPULAR</div>
-                    <h3 class="text-lg font-semibold text-blue-600 uppercase tracking-wide">Premium</h3>
+                    <div class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">人気</div>
+                    <h3 class="text-lg font-semibold text-blue-600 uppercase tracking-wide">プレミアム</h3>
                     <div class="my-4">
                         <span class="text-4xl font-bold text-slate-900">$5</span>
-                        <span class="text-slate-500">/ month</span>
+                        <span class="text-slate-500">/ 月 (USD)</span>
                     </div>
                     <ul class="text-left space-y-3 mb-8 text-slate-600">
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> <strong>Bulk Date Automation</strong></li>
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> <strong>Skip Weekends</strong></li>
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Day-of-week selector</li>
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Priority Support</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> <strong>期間指定の一括自動化</strong></li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> <strong>土日・祝日のスキップ機能</strong></li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> 曜日指定セレクター</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> 優先サポート</li>
                     </ul>
-                    <a href="https://chromewebstore.google.com/detail/concur-clicker-cdp-editio/cfefigifpjeanpkchmnjbhafebnffkpn" target="_blank" class="block w-full py-3 px-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition">Subscribe</a>
+                    <a href="https://chromewebstore.google.com/detail/concur-clicker-cdp-editio/cfefigifpjeanpkchmnjbhafebnffkpn" target="_blank" class="block w-full py-3 px-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition">登録する</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Policies (CRITICAL FOR STRIPE) -->
-    <section class="py-16 bg-white border-t border-slate-200">
+    <section id="policies" class="py-16 bg-white border-t border-slate-200">
         <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-2xl font-bold text-slate-900 mb-8 text-center">Policies & Terms</h2>
+            <h2 class="text-2xl font-bold text-slate-900 mb-8 text-center">ポリシーと規約</h2>
             
             <div class="grid md:grid-cols-2 gap-12 text-sm text-slate-600">
                 <div>
-                    <h3 class="font-bold text-slate-900 mb-2">Refund & Cancellation Policy</h3>
+                    <h3 class="font-bold text-slate-900 mb-2">返金およびキャンセルポリシー</h3>
                     <p class="mb-4">
-                        You may cancel your subscription at any time via the extension settings or by contacting support. 
-                        If you cancel, your subscription will remain active until the end of the current billing period.
+                        サブスクリプションの解約は、拡張機能の設定画面またはサポートへの連絡を通じていつでも可能です。
+                        解約された場合でも、現在の請求期間が終了するまでは引き続きサービスをご利用いただけます。
                     </p>
                     <p>
-                        We offer a <strong>7-day money-back guarantee</strong>. If you are not satisfied with the Premium features within the first 7 days of your purchase, please contact us for a full refund.
+                        また、<strong>7日間の返金保証</strong>を提供しています。購入後7日以内にプレミアム機能にご満足いただけなかった場合は、全額返金いたしますのでサポートまでご連絡ください。
                     </p>
                 </div>
                 <div>
-                    <h3 class="font-bold text-slate-900 mb-2">Privacy Policy Summary</h3>
+                    <h3 class="font-bold text-slate-900 mb-2">プライバシーポリシー概要</h3>
                     <p class="mb-4">
-                        Concur Clicker operates entirely locally within your browser. 
-                        We do not transmit your expense data, login credentials, or browsing history to any external server.
+                        Concur Clickerは、お使いのブラウザ内（ローカル環境）でのみ動作します。
+                        お客様の経費データ、ログイン情報、閲覧履歴などを外部サーバーに送信することは一切ありません。
                     </p>
                     <p>
-                        We only store your automation preferences (e.g., date ranges) locally on your device using Chrome's storage API.
+                        自動化の設定（例：前回の日付範囲など）はお客様のデバイス上のChromeストレージにのみ保存されます。
                     </p>
                 </div>
             </div>
@@ -180,23 +180,23 @@
     <!-- Legal / Tokusho-ho (UPDATED FOR STRIPE JAPAN COMPLIANCE) -->
     <section id="tokusho" class="py-16 bg-slate-50 border-t border-slate-200">
         <div class="max-w-3xl mx-auto px-4">
-            <h2 class="text-xl font-bold text-slate-900 mb-6 text-center">特定商取引法に基づく表記 (Legal Information)</h2>
+            <h2 class="text-xl font-bold text-slate-900 mb-6 text-center">特定商取引法に基づく表記</h2>
             <div class="bg-white p-6 rounded-lg border border-slate-200 text-sm space-y-4">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-2 border-b border-slate-100 pb-3">
                     <div class="font-bold text-slate-700">販売業者</div>
-                    <div class="md:col-span-2 text-slate-600">佐竹優泰 Yutai Satake</div>
+                    <div class="md:col-span-2 text-slate-600">佐竹 優泰</div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-2 border-b border-slate-100 pb-3">
                     <div class="font-bold text-slate-700">運営統括責任者</div>
-                    <div class="md:col-span-2 text-slate-600">佐竹優泰 Yutai Satake</div>
+                    <div class="md:col-span-2 text-slate-600">佐竹 優泰</div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-2 border-b border-slate-100 pb-3">
                     <div class="font-bold text-slate-700">所在地</div>
-                    <div class="md:col-span-2 text-slate-600">東京都品川区大井 1丁目 31番</div>
+                    <div class="md:col-span-2 text-slate-600">東京都 品川区 大井 1丁目</div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-2 border-b border-slate-100 pb-3">
                     <div class="font-bold text-slate-700">電話番号</div>
-                    <div class="md:col-span-2 text-slate-600">07044197988</div>
+                    <div class="md:col-span-2 text-slate-600">070 4419 7988</div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-2 border-b border-slate-100 pb-3">
                     <div class="font-bold text-slate-700">メールアドレス</div>
@@ -204,36 +204,37 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-2 border-b border-slate-100 pb-3">
                     <div class="font-bold text-slate-700">販売価格</div>
-                    <div class="md:col-span-2 text-slate-600">495 円/月 </div>
+                    <div class="md:col-span-2 text-slate-600">495円/月</div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-2 border-b border-slate-100 pb-3">
                     <div class="font-bold text-slate-700">支払方法</div>
-                    <div class="md:col-span-2 text-slate-600">Credit Card (Stripe)</div>
+                    <div class="md:col-span-2 text-slate-600">クレジットカード決済 (Stripe)</div>
                 </div>
-                <!-- 追加項目：支払時期 -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-2 border-b border-slate-100 pb-3">
                     <div class="font-bold text-slate-700">代金の支払時期</div>
                     <div class="md:col-span-2 text-slate-600">初回申し込み時、および翌月以降毎月請求日にクレジットカード決済が行われます。</div>
                 </div>
-                <!-- 追加項目：引渡時期 -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-2 border-b border-slate-100 pb-3">
                     <div class="font-bold text-slate-700">商品の引渡時期</div>
                     <div class="md:col-span-2 text-slate-600">決済完了後、直ちにご利用いただけます。</div>
                 </div>
-                 <!-- 追加項目：動作環境 -->
                  <div class="grid grid-cols-1 md:grid-cols-3 gap-2 border-b border-slate-100 pb-3">
                     <div class="font-bold text-slate-700">動作環境</div>
                     <div class="md:col-span-2 text-slate-600">Google Chrome (Desktop版) 最新版</div>
                 </div>
+                 <div class="grid grid-cols-1 md:grid-cols-3 gap-2 border-b border-slate-100 pb-3">
+                    <div class="font-bold text-slate-700">契約期間・更新</div>
+                    <div class="md:col-span-2 text-slate-600">1ヶ月ごとの自動更新契約です。解約手続きが行われるまで契約は継続します。</div>
+                </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
                     <div class="font-bold text-slate-700">キャンセル・返品</div>
                     <div class="md:col-span-2 text-slate-600">
-                        解約はいつでも可能です。購入後7日以内であれば返金保証があります。詳細はRefund Policyをご確認ください。
+                        解約はいつでも可能です。購入後7日以内であれば返金保証があります。詳細は上記の返金ポリシーをご確認ください。
                     </div>
                 </div>
             </div>
             <p class="text-xs text-slate-400 mt-4 text-center">
-                ※ This section is required for compliance with Japanese Commercial Transactions Law. Please replace the bracketed text with your actual information.
+                ※ 上記のカッコ書きの部分は、実際の事業者の情報に置き換えてください。
             </p>
         </div>
     </section>
@@ -250,11 +251,11 @@
             </div>
             
             <div class="text-center md:text-right">
-                <h4 class="font-bold text-slate-200 mb-2">Contact Us</h4>
+                <h4 class="font-bold text-slate-200 mb-2">お問い合わせ</h4>
                 <p class="mb-2"><i class="fa-solid fa-envelope mr-2"></i> <a href="mailto:support@concurclicker.com" class="hover:text-white transition">support@concurclicker.com</a></p>
                 <p class="text-xs mt-4">
                     &copy; 2025 Concur Clicker. All rights reserved.<br>
-                    <a href="#" class="hover:text-white">Terms of Service</a> • <a href="#" class="hover:text-white">Privacy Policy</a> • <a href="#tokusho" class="hover:text-white">Tokusho-ho</a>
+                    <a href="#" class="hover:text-white">利用規約</a> • <a href="#" class="hover:text-white">プライバシーポリシー</a> • <a href="#tokusho" class="hover:text-white">特商法表記</a>
                 </p>
             </div>
         </div>
